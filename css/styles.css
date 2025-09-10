@@ -590,3 +590,91 @@ nav{
         font-size: 28px;
     }
 }
+
+
+/* footer section */
+.footer{
+    background-color: #000000;
+    color: white;
+    padding: 60px 0;
+}
+
+.footer-content{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 60px;
+}
+
+.footer-info{
+    max-width: 400px;
+}
+
+.footer-logo{
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    width: auto;
+}
+.footer-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.footer-address h3, .footer-contact h3{
+font-size:  20px;
+font-weight: 600px;
+margin-bottom: 24px;
+}
+
+.footer-address p {
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+.footer-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-link{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.contact-icon{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 40px 0;
+    }
+
+    .footer-content{
+
+        grid-template-columns: 1fr;
+        gap: 32px;
+        text-align: center;
+        
+    }
+
+    .footer-contact {
+        align-items: center;
+    }
+
+
+
+}
